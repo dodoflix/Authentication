@@ -1,0 +1,12 @@
+name: Authentication
+version: '${project.version}'
+main: me.dodo.authentication.Authentication
+api-version: 1.18
+prefix: Authentication
+authors: [ dodo ]
+description: Authentication for offline servers.
+website: https://github.com/dodoflix
+
+commands:
+  login:
+  register:
