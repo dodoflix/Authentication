@@ -1,0 +1,14 @@
+language: EN
+storage:
+  host: "127.0.0.1"
+  port: "6666"
+  database: "authentication"
+  user: "root"
+  password: "my_secret_password"
+smtp:
+  host: "127.0.0.1"
+  port: "6666"
+  user: "root"
+  password: "my_secret_password"
+settings:
+  blindness-effect: true
