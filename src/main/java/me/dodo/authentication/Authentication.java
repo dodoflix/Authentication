@@ -41,6 +41,7 @@ public final class Authentication extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PlayerItemDamage(), this);
         getServer().getPluginManager().registerEvents(new InventoryClick(), this);
         getServer().getPluginManager().registerEvents(new BlockBreak(), this);
+        getServer().getPluginManager().registerEvents(new PlayerCommandPreprocess(), this);
 
         Objects.requireNonNull(this.getCommand("login")).setExecutor(new Login());
         Objects.requireNonNull(this.getCommand("register")).setExecutor(new Register());

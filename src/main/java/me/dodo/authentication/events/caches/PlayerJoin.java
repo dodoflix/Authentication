@@ -6,6 +6,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 
 import java.util.List;
 
@@ -33,6 +35,7 @@ public class PlayerJoin implements Listener {
             player.sendMessage("Lütfen kayıt olmak için '/register <şifre> <şifre>' komudunu giriniz.");
         else
             player.sendMessage("Lütfen giriş yapmak için '/login <şifre>' komudunu giriniz.");
-
+        PotionEffect effect = new PotionEffect(PotionEffectType.BLINDNESS, 9999, 1, false, false);
+        player.addPotionEffect(effect);
     }
 }

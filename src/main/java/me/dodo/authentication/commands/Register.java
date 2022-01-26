@@ -6,6 +6,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.potion.PotionEffectType;
 
 import java.util.List;
 
@@ -39,6 +40,7 @@ public class Register implements CommandExecutor {
         filtered.get(0).setPassword(args[0]);
         filtered.get(0).setLoggedIn(true);
         player.sendMessage("Başarıyla kayıt oldunuz!");
+        player.removePotionEffect(PotionEffectType.BLINDNESS);
         return true;
     }
 }

@@ -6,6 +6,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.potion.PotionEffectType;
 
 import java.util.List;
 
@@ -39,6 +40,7 @@ public class Login implements CommandExecutor {
         if (args[0].equals(filtered.get(0).getPassword())) {
             filtered.get(0).setLoggedIn(true);
             player.sendMessage("Başarıyla giriş yapıldı!");
+            player.removePotionEffect(PotionEffectType.BLINDNESS);
         } else {
             player.sendMessage("Şifreyi hatalı girdiniz.");
         }
