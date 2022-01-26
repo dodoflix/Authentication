@@ -1,4 +1,4 @@
-# Custom Join Messages
+# Authentication
 
 Authenticate users for security!
 
